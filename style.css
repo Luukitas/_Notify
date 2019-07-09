@@ -1,0 +1,371 @@
+body{
+    display: grid;
+    font-family: 'Asap', sans-serif;
+    grid-template-areas: 'header header header header'
+                        'section1 section1 section1 section1'
+                        'section2 section2 section2 section2'
+                        'third third third third'
+                        'footer footer footer footer';
+    grid-template-rows: 80vh auto auto auto auto;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img{
+    background-image: url('Imgs/banner.png');
+    background-position: center right;
+    background-size: cover;
+}
+
+header{
+    border-top: 10px solid rgb(25, 153, 15);
+    color: white;
+    display: grid;
+    grid-template-areas: 'header1 header2';
+    grid-template-columns: 25vw 30vw;
+    grid-gap: 5vw;
+    grid-area: header;
+    justify-content: center;
+} 
+
+header div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header span{
+    color: rgb(15, 192, 15);
+}
+
+#header1{
+    display: flex;
+    flex-direction: column;
+    grid-area: header1;
+    align-items: flex-start
+}
+
+#header1 ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#header1 li{
+    align-items: center;
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    margin: 0 5px;
+    width: 60px;
+}
+
+#header1 li:hover{
+    background-color: rgb(25, 153, 15);
+}
+
+#header1 a{
+    display: block;
+}
+
+#header1 img{
+    width: 30px;
+}
+
+#header2{
+    display: flex;
+    grid-area: header2;
+    align-items: flex-end;
+}
+
+#header2 img{
+    height: 410px;
+    width: 360px;
+}
+
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 40pt;
+    font-weight: normal;
+    margin: 0;
+}
+
+.section1{
+    align-items: center;
+    display: flex;
+    grid-area: section1;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section1 ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 80%;
+}
+
+.section1 li{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 33%;
+}
+
+.section1 img{
+    height: 35px;
+    width: 35px;
+}
+
+.section1 div{
+    align-items: center;
+    background-color: rgb(25, 153, 15);
+    border-radius: 50%;
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    width: 75px;
+}
+
+.section1 p{
+    color: grey;
+    margin: 0;
+}
+
+.section2{
+    background-color: lightgray;
+    display: grid;
+    grid-area: section2;
+    grid-template-areas: 'div1 div1 div2 div2';
+    grid-gap: 40px;
+    justify-content: center; 
+}
+
+.section2 div{
+    display: flex;
+}
+
+#div1{
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: div1;
+    justify-content: flex-start;
+    padding: 20px;
+    text-align: left;
+    width: 400px;
+}
+
+#div1 h2{
+    left: 0;
+    margin: 0;
+    padding: 20px 0;
+}
+
+#div1 p{
+    color: grey;
+}
+
+.email{
+    display: flex;
+    padding: 20px 0;
+}
+
+.email input{
+    border: none;
+    border-radius: 10px 0 0 10px;
+    padding: 15px 10px;
+    width: 215px;
+}
+
+.email button{
+    background-color: rgb(15, 192, 15);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    font-size: 15pt;
+    width: 115px;
+}
+
+.email button:hover{
+    background-color: rgb(25, 153, 25);
+}
+
+#div2{
+    align-items: center;
+    grid-area: div2;
+    justify-content: center;
+    padding: 20px;
+}
+
+iframe{
+    border: none;
+    border-radius: 10px;
+}
+
+.third{
+    grid-area: third;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*esta centralizando os itens do third no centro da tela*/
+    text-align: center;
+}
+
+.third p{
+    color: grey;
+}
+
+.ipsum{
+    font-style: italic;
+    width: 60%;
+}
+
+.case{
+    display: flex;
+}
+
+.img{
+    width: 45px;
+    height: 45px;
+    margin: 3px;
+}
+
+.sn{
+    width: 20px;
+    margin: 10px;
+}
+
+#redes a{
+    align-items: center;
+    background-color: rgb(180, 180, 180);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+#redes a:hover{
+    background-color: rgb(15, 192, 15);
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 14pt;
+}
+
+.footer{
+    text-decoration: none;
+    color: grey;
+    padding-right: 30px;
+}
+
+a:hover{
+    color: white;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightgray;
+    height: 120px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-family: 'Pacifico', cursive;
+    font-size: 15pt;
+}
+
+footer span{
+    color: rgb(25, 153, 15);
+}
+
+@media(max-width: 1100px){
+    body{
+        grid-template-rows: 40vh auto;
+    }
+
+    #header2 img{
+        height: 80%;
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    body{
+        grid-template-rows: 80vh auto;
+    }
+
+    header{
+        grid-template-areas: 'header1 header1';
+        grid-template-columns: 90vw;
+        grid-gap: none;
+    }
+
+    .bg-img{
+        background-size: cover;
+    }
+
+    #header1{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #header2{
+        display: none;
+    }
+
+    .section1 ul{
+        display: block;
+    }
+
+    .section1 li{
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .section2{
+        grid-template-areas: 'div1 div1 div1 div1'
+                            'div2 div2 div2 div2';
+    }
+
+    .section2 div{
+        width: auto;
+    }
+
+    #div1{
+        align-items: center;
+        padding: 0;
+        text-align: center;
+        width: 99%;
+    }
+
+    .ipsum{
+        width: auto;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer{
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .fotos :not(.fica){
+        display: none;
+    }
+}
